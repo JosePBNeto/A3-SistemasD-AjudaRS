@@ -22,11 +22,26 @@ public class BemPerdidoController {
     @Autowired
     private UsuarioService usuarioService;
 
+    @GetMapping("/usuario/cpf/{cpf}")
+    public ResponseEntity<?> obterUsuarioEBensPerdidosPorCpf(@PathVariable String cpf) {
+        Usuario usuario = usuarioService.obterUsuarioPorCpf(cpf);
+        if (usuario == null) {
+            return ResponseEntity.status(404).body("Usuário não encontrado");
+        }
+
+        List<BemPerdido> bensPerdidos = bemPerdidoService.obterBensPerdidosPorUsuario(cpf);
+        Map<String, Object> response = new HashMap<>();
+        response.put("Nome do usuário:", usuario.getNomeCompleto());
+        response.put("Bem perdido:", bensPerdidos);
+
+        return ResponseEntity.ok(response);
+    }
+
     @PostMapping
     public ResponseEntity<?> cadastrarBemPerdido(@RequestBody BemPerdido bemPerdido) {
 
         RestTemplate restTemplate = new RestTemplate();
-        String usuarioServiceUrl = "http://localhost:8080/usuarios/" + bemPerdido.getUsuarioId();
+        String usuarioServiceUrl = "http://localhost:8080/usuarios/cpf/" + bemPerdido.getUsuarioCpf();
         ResponseEntity<?> usuarioResponse = restTemplate.getForEntity(usuarioServiceUrl, Object.class);
 
         if (usuarioResponse.getStatusCode().is2xxSuccessful()) {
@@ -38,19 +53,7 @@ public class BemPerdidoController {
 
     }
 
-    @GetMapping("/usuario/{usuarioId}")
-    public ResponseEntity<?> obterUsuarioEBensPerdidos(@PathVariable Long usuarioId) {
-        Usuario usuario = usuarioService.obterUsuario(usuarioId);
-        if (usuario == null) {
-            return ResponseEntity.status(404).body("Usuário não encontrado");
-        }
-
-        List<BemPerdido> bensPerdidos = bemPerdidoService.obterBensPerdidosPorUsuario(usuarioId);
-        Map<String, Object> response = new HashMap<>();
-        response.put("nomeUsuario", usuario.getNomeCompleto());
-        response.put("bensPerdidos", bensPerdidos);
-
-        return ResponseEntity.ok(response);
-    }
 }
+
+
 

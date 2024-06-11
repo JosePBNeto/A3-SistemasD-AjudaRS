@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface BemPerdidoRepository extends JpaRepository<BemPerdido, Long> {
-    List<BemPerdido> findByUsuarioId(Long usuarioId);
+    List<BemPerdido> findByUsuarioCpf(String usuarioCpf);
 }

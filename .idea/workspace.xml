@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade11b00-9b6c-4cd3-8c91-03fd706ecdbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajudaRS/ajudaRS/src/main/java/app/ajudaRS/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajudaRS/ajudaRS/src/main/java/app/ajudaRS/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajudaRS/ajudaRS/src/main/java/app/ajudaRS/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ajudaRS/ajudaRS/src/main/java/app/ajudaRS/services/UsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajudaRS/ajudaRS/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ajudaRS/ajudaRS/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/controllers/BemPerdidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/controllers/BemPerdidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/BemPerdido.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/BemPerdido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/repositories/BemPerdidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/repositories/BemPerdidoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/BemPerdidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/BemPerdidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

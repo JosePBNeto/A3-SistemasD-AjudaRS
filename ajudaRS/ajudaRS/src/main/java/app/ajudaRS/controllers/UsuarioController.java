@@ -29,5 +29,12 @@ public class UsuarioController {
                 .map(usuario -> ResponseEntity.ok(usuario))
                 .orElseGet(() -> ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Usuario> obterUsuario(@PathVariable Long id) {
+        return usuarioService.buscarPorId(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
 }
 

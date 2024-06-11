@@ -19,5 +19,9 @@ public class UsuarioService {
     public Optional<Usuario> buscarPorCpf(String cpf) {
         return usuarioRepository.findByCpf(cpf);
     }
+
+    public Optional<Usuario> buscarPorId(Long id) {
+        return usuarioRepository.findById(id);
+    }
 }
 

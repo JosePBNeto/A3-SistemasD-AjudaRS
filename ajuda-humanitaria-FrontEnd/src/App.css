@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c0f5f2;
+  padding: 10px 20px; /* Reduced padding */
+  color: white;
+}
+
+.App-logo {
+  height: 45px; 
+  margin-right: 25px; 
+}
+
+.App-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.App-header nav ul li {
+  margin: 0 10px;
+}
+
+.App-header nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.App-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.main {
+  padding: 20px;
+}
+
+.form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #c0f5f2;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form button:hover {
+  background-color: #000000;
+}
+
+.home {
+  margin: 20px;
+}

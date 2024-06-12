@@ -1,0 +1,15 @@
+.home {
+    text-align: center;
+    margin: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.image {
+    width: 30%; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+}

@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade11b00-9b6c-4cd3-8c91-03fd706ecdbd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scr.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/controllers/BemPerdidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/controllers/BemPerdidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/BemPerdido.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/BemPerdido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/entities/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/repositories/BemPerdidoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/repositories/BemPerdidoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/BemPerdidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/BemPerdidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/UsuarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidos/BensPerdidos/src/main/java/app/BensPerdidos/services/UsuarioService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>

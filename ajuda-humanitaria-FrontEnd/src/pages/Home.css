@@ -6,10 +6,12 @@
 .image-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .image {
-    width: 30%; /* Ajuste o tamanho das imagens conforme necessário */
+    width: 30%; 
     height: auto;
+    border: 2px solid #c0f5f2;
+    padding: 5px;
 }

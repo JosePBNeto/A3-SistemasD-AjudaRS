@@ -42,7 +42,7 @@
 }
 
 .form {
-  margin: 20px;
+  margin: 100px;
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -73,9 +73,48 @@
 }
 
 .form button:hover {
-  background-color: #000000;
+  background-color: #42af94;
 }
 
 .home {
   margin: 20px;
+}
+
+.result {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+
+.result h3, .result h4 {
+  color: #282c34;
+}
+
+.result ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.result ul li:last-child {
+  border-bottom: none;
+}
+
+.result ul li span {
+  display: block;
+}
+
+.result ul li span.descricao {
+  font-weight: bold;
+}
+
+.result ul li span.valor {
+  color: #61dafb;
 }

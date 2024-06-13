@@ -12,8 +12,9 @@ function ListarBensPerdidos() {
 
         axios.get(`http://localhost:8081/bens_perdidos/usuario/cpf/${cpf}`)
             .then(response => {
-                setUsuario(response.data.nomeUsuario);
-                setBensPerdidos(response.data.bensPerdidos);
+                const data = response.data;
+                setUsuario(data['Nome do usuário:']);
+                setBensPerdidos(data['Bem perdido:']);
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -29,13 +30,14 @@ function ListarBensPerdidos() {
                 <button type="submit">Consultar</button>
             </form>
             {usuario && (
-                <div>
+                <div className="result">
                     <h3>Usuário: {usuario}</h3>
                     <h4>Bens Perdidos:</h4>
                     <ul>
-                        {bensPerdidos.map(bem => (
-                            <li key={bem.id}>
-                                {bem.descricao} - R$ {bem.valorEstimado}
+                        {bensPerdidos.map((bem, index) => (
+                            <li key={index}>
+                                <span className="descricao">{bem.descricao}</span>
+                                <span className="valor">R$ {bem.valorEstimado.toFixed(2)}</span>
                             </li>
                         ))}
                     </ul>

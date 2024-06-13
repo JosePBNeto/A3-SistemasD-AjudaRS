@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 function CadastroBemPerdido() {
@@ -19,15 +21,21 @@ function CadastroBemPerdido() {
 
         axios.post('http://localhost:8081/bens_perdidos', bemPerdido)
             .then(response => {
-                console.log('Success:', response.data);
+                toast.success('Bem perdido registrado com sucesso!')
+                setDescricao('')
+                setValorEstimado('')
             })
             .catch(error => {
-                console.error('Error:', error);
+                const errorMessage = error.response && error.response.data && error.response.data.message 
+                    ? error.response.data.message 
+                    : 'Erro ao cadastrar usuário. Tente novamente.';
+                toast.error(errorMessage);
             });
     };
 
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <div>
+            <form className="form" onSubmit={handleSubmit}>
             <h2>Cadastro de Bem Perdido</h2>
             <label>Descrição:</label>
             <input type="text" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />
@@ -36,7 +44,22 @@ function CadastroBemPerdido() {
             <label>CPF do Usuário:</label>
             <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
             <button type="submit">Cadastrar</button>
-        </form>
+            </form>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                transition={Slide}
+            />
+        </div>
+
+        
     );
 }
 

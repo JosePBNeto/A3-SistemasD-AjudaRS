@@ -5,7 +5,7 @@ import CadastroUsuarioPage from './pages/CadastroUsuarioPage';
 import CadastroBemPerdidoPage from './pages/CadastroBemPerdidoPage';
 import ListarBensPerdidosPage from './pages/ListarBensPerdidosPage';
 import './App.css';
-import logo from './logo.png'; // Import the logo
+import logo from './logo.png'; 
 
 function App() {
     return (

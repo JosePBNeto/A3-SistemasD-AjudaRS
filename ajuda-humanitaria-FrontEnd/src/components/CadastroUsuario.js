@@ -6,11 +6,19 @@ function CadastroUsuario() {
     const [nomeCompleto, setNomeCompleto] = useState('');
     const [cpf, setCpf] = useState('');
     const [endereco, setEndereco] = useState('');
+    const [email, setEmail] = useState('')
     const [telefone, setTelefone] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const usuario = { nomeCompleto, cpf, endereco, telefone };
+        
+        const usuario = {
+            nome_completo: nomeCompleto,
+            cpf: cpf,
+            email: email,
+            endereco_antigo: endereco,
+            telefone: telefone
+        };
 
         axios.post('http://localhost:8080/usuarios', usuario)
             .then(response => {
@@ -28,6 +36,10 @@ function CadastroUsuario() {
             <input type="text" value={nomeCompleto} onChange={(e) => setNomeCompleto(e.target.value)} required />
             <label>CPF:</label>
             <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} required />
+
+            <label>E-mail:</label>
+            <input type='text' value={email} onChange={(e) => setEmail(e.target.value)} required />
+            
             <label>Endereço:</label>
             <input type="text" value={endereco} onChange={(e) => setEndereco(e.target.value)} required />
             <label>Telefone:</label>

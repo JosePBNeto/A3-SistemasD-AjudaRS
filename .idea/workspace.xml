@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ade11b00-9b6c-4cd3-8c91-03fd706ecdbd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/components/CadastroBemPerdido.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/components/CadastroBemPerdido.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/components/CadastroUsuario.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/components/CadastroUsuario.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BensPerdidosAPI/BensPerdidosAPI/src/main/java/app/BensPerdidos/services/BemPerdidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BensPerdidosAPI/BensPerdidosAPI/src/main/java/app/BensPerdidos/services/BemPerdidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/components/ListarBensPerdidos.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/components/ListarBensPerdidos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/ajuda-humanitaria-FrontEnd/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,12 @@
     "last_opened_file_path": "C:/Users/josep/OneDrive/Documentos/exercicios_programacao/A3-SistemasD-AjudaRS"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BensPerdidosApplication">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="app.BensPerdidos.exceptions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AjudaRsApplication">
     <configuration name="AjudaRsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.ajudaRS.AjudaRsApplication" />
       <module name="ajudaRS" />
@@ -78,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BensPerdidosApplication" />
         <item itemvalue="Application.AjudaRsApplication" />
+        <item itemvalue="Application.BensPerdidosApplication" />
       </list>
     </recent_temporary>
   </component>

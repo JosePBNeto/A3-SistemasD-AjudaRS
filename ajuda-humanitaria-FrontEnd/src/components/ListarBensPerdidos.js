@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
 function ListarBensPerdidos() {
@@ -15,9 +17,11 @@ function ListarBensPerdidos() {
                 const data = response.data;
                 setUsuario(data['Nome do usuário:']);
                 setBensPerdidos(data['Bem perdido:']);
+                toast.success('Consulta realizada com sucesso!');
             })
             .catch(error => {
                 console.error('Error:', error);
+                toast.error('Erro ao consultar bens perdidos. Verifique o CPF e tente novamente.');
             });
     };
 
@@ -43,6 +47,17 @@ function ListarBensPerdidos() {
                     </ul>
                 </div>
             )}
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 }

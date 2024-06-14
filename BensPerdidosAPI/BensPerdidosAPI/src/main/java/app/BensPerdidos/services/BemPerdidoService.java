@@ -13,7 +13,12 @@ public class BemPerdidoService {
     private BemPerdidoRepository bemPerdidoRepository;
 
     public BemPerdido cadastrarBemPerdido(BemPerdido bemPerdido) {
-        return bemPerdidoRepository.save(bemPerdido);
+        try {
+            return bemPerdidoRepository.save(bemPerdido);
+        } catch (Exception e) {
+            throw new RuntimeException("Insura um valor válido");
+        }
+
     }
 
     public List<BemPerdido> obterBensPerdidosPorUsuario(String usuarioCpf) {
